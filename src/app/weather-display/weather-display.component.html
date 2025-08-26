@@ -1,0 +1,9 @@
+<mat-card *ngIf="weather">
+    <mat-card-title>{{weather.name}}, {{weather.sys.country}}</mat-card-title>
+    <mat-card-content>
+        <p>Temperature: {{weather.main.temp}}</p>
+        <p>Condition: {{weather.weather[0].description}}</p>
+        <p>Humidity: {{weather.main.humidity}}</p>
+        <p>Wind:{{weather.wind.speed}}</p>
+    </mat-card-content>
+</mat-card>

@@ -1,0 +1,12 @@
+<div class="forecast" *ngIf="forecast">
+  <h3>5-Day Forecast</h3>
+  <div class="forecast-cards">
+    <mat-card *ngFor="let item of forecast?.list | slice:0:5">
+    <mat-card-content>
+        <p>{{ item.dt_txt | date:'EEE, MMM d' }}</p>
+        <p>{{ item.main.temp }} °C</p>
+        <p>{{ item.weather[0].description }}</p>
+    </mat-card-content>
+    </mat-card>
+  </div>
+</div>
