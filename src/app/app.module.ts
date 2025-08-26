@@ -38,7 +38,6 @@ import { MatListModule } from '@angular/material/list';
     MatCardModule,
     MatIconModule,
     MatGridListModule,
-    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
